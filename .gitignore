@@ -1,2 +1,5 @@
 creds.py
 .idea/
+*.pyc
+*.log
+*.xlsx
