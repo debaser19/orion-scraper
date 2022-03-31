@@ -1,15 +1,16 @@
 from selenium import webdriver
-import creds
 import time
 import pandas as pd
+
+import config
 
 
 def scrape_resellers():
     driver.get(base_url)
 
     # log in using the form
-    driver.find_element_by_xpath('//*[@id="user_login"]').send_keys(creds.creds['username'])
-    driver.find_element_by_xpath('//*[@id="user_password"]').send_keys(creds.creds['password'])
+    driver.find_element_by_xpath('//*[@id="user_login"]').send_keys(config.username)
+    driver.find_element_by_xpath('//*[@id="user_password"]').send_keys(config.password)
     driver.find_element_by_xpath('//*[@id="new_user"]/div[3]/div/input').click()
 
     # ask for MFA code and enter it to log in

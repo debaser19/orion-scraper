@@ -1,5 +1,7 @@
-creds.py
+config.py
 .idea/
 *.pyc
 *.log
 *.xlsx
+__pycache__/
+.venv/
